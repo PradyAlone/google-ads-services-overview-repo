@@ -88,7 +88,7 @@
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
+      grid-template-columns: minmax(0, 1.24fr) minmax(380px, 0.76fr);
       gap: 34px;
       align-items: center;
     }
@@ -118,10 +118,10 @@
 
     h1 {
       margin: 24px 0 18px;
-      max-width: 800px;
-      font-size: clamp(48px, 7.6vw, 96px);
-      line-height: 0.92;
-      letter-spacing: -0.075em;
+      max-width: 860px;
+      font-size: clamp(42px, 5.75vw, 76px);
+      line-height: 1.08;
+      letter-spacing: -0.06em;
       font-weight: 850;
     }
 
@@ -134,7 +134,7 @@
 
     .hero-copy {
       max-width: 670px;
-      margin: 0;
+      margin: 34px 0 0;
       color: var(--muted);
       font-size: clamp(18px, 2vw, 22px);
       line-height: 1.55;
